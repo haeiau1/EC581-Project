@@ -1,0 +1,79 @@
+======================================================================
+EC581 PROJECT — S&P 500 SECTOR DATA QUALITY REPORT
+Generated: 2026-05-16
+======================================================================
+
+[1] DATA COVERAGE
+
+Sector           First Date   Last Date      N Obs  Exp Days  Coverage   Max Gap
+------------------------------------------------------------------------
+IT               1993-05-04   2026-05-15     8,312     8,323     99.9%        7d
+CommSvcs         1993-05-04   2026-05-15     8,313     8,323     99.9%        7d
+ConDisc          1993-05-04   2026-05-15     8,312     8,323     99.9%        7d
+ConStaples       1993-05-04   2026-05-15     8,313     8,323     99.9%        7d
+Financials       1993-05-04   2026-05-15     8,313     8,323     99.9%        7d
+HealthCare       1993-05-04   2026-05-15     8,313     8,323     99.9%        7d
+Industrials      1993-05-04   2026-05-15     8,313     8,323     99.9%        7d
+Materials        1993-05-04   2026-05-15     8,315     8,323     99.9%        7d
+Utilities        1993-05-04   2026-05-15     8,313     8,323     99.9%        7d
+RealEstate       2001-10-09   2026-05-15     6,190     6,198     99.9%        5d
+
+[2] MISSING VALUES
+
+Sector            Missing (Close)  Pct Missing  Zero Returns
+------------------------------------------------------------
+IT                              0      0.0000%             8
+CommSvcs                        0      0.0000%            26
+ConDisc                         0      0.0000%            11
+ConStaples                      0      0.0000%            17
+Financials                      0      0.0000%            18
+HealthCare                      0      0.0000%             8
+Industrials                     0      0.0000%            21
+Materials                       0      0.0000%            23
+Utilities                       0      0.0000%            28
+RealEstate                      0      0.0000%            12
+
+[3] DAILY RETURN STATISTICS (annualized where noted)
+
+Sector            Ann Ret%  Ann Vol%     Skew  Ex.Kurt     Min%     Max%  Outliers(4σ)
+-------------------------------------------------------------------------------------
+IT                   17.23     27.14   0.2525   6.4203  -13.915   17.441            43
+CommSvcs              7.17     22.05   0.1277   6.7559  -10.444   13.799            42
+ConDisc              11.31     21.52  -0.0450   7.3327  -12.082   13.103            48
+ConStaples            8.37     14.97  -0.0466  10.1799   -9.235    9.237            48
+Financials           10.01     27.24   0.2993  17.0586  -17.005   18.769            74
+HealthCare           10.50     18.10  -0.0433   7.1231   -9.992   12.427            48
+Industrials          10.32     20.23  -0.1926   8.1072  -11.445   12.751            52
+Materials             8.42     22.44  -0.0898   7.5635  -12.132   13.284            49
+Utilities             5.60     18.52   0.1164  13.0692  -11.543   13.524            50
+RealEstate            8.32     29.05   0.4085  20.6849  -18.472   20.745            74
+
+[4] NORMALITY TEST (Jarque-Bera) & AUTOCORRELATION
+
+Sector              JB Stat   JB p-val  AC(1) ret   ADF p-val (log-px)
+----------------------------------------------------------------------
+IT                 14,342.2     0.0000    -0.0459   0.9648 (non-stationary, NON-NORMAL)
+CommSvcs           15,807.4     0.0000    -0.0431   0.9456 (non-stationary, NON-NORMAL)
+ConDisc            18,596.2     0.0000    -0.0196   0.9355 (non-stationary, NON-NORMAL)
+ConStaples         35,845.4     0.0000    -0.0654   0.6658 (non-stationary, NON-NORMAL)
+Financials        100,776.2     0.0000    -0.0790   0.5279 (non-stationary, NON-NORMAL)
+HealthCare         17,550.3     0.0000    -0.0232   0.4885 (non-stationary, NON-NORMAL)
+Industrials        22,783.1     0.0000    -0.0291   0.8905 (non-stationary, NON-NORMAL)
+Materials          19,801.0     0.0000    -0.0195   0.7980 (non-stationary, NON-NORMAL)
+Utilities          59,096.2     0.0000    -0.0467   0.8870 (non-stationary, NON-NORMAL)
+RealEstate        110,319.0     0.0000    -0.1768   0.6027 (non-stationary, NON-NORMAL)
+
+[5] FLAGS & WARNINGS
+
+  IT            : 8 zero-return days | 43 outliers beyond 4σ | Log-price appears non-stationary (expected for price levels)
+  CommSvcs      : 26 zero-return days | 42 outliers beyond 4σ | Log-price appears non-stationary (expected for price levels)
+  ConDisc       : 11 zero-return days | 48 outliers beyond 4σ | Log-price appears non-stationary (expected for price levels)
+  ConStaples    : 17 zero-return days | 48 outliers beyond 4σ | Log-price appears non-stationary (expected for price levels)
+  Financials    : 18 zero-return days | 74 outliers beyond 4σ | Log-price appears non-stationary (expected for price levels)
+  HealthCare    : 8 zero-return days | 48 outliers beyond 4σ | Log-price appears non-stationary (expected for price levels)
+  Industrials   : 21 zero-return days | 52 outliers beyond 4σ | Log-price appears non-stationary (expected for price levels)
+  Materials     : 23 zero-return days | 49 outliers beyond 4σ | Log-price appears non-stationary (expected for price levels)
+  Utilities     : 28 zero-return days | 50 outliers beyond 4σ | Log-price appears non-stationary (expected for price levels)
+  RealEstate    : 12 zero-return days | 74 outliers beyond 4σ | Log-price appears non-stationary (expected for price levels)
+
+======================================================================
